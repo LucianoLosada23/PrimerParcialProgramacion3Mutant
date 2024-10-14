@@ -16,7 +16,7 @@ RUN chmod +x ./gradlew
 RUN ./gradlew build -x test
 
 # Etapa 2: Crear la imagen final para ejecución
-FROM eclipse-temurin:17-jdk-alpine
+FROM eclipse-temurin:21-jdk-alpine
 
 # Configurar el directorio de trabajo dentro del contenedor
 WORKDIR /app
